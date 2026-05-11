@@ -1,7 +1,7 @@
 {
   "greeting": "Oi! 👋 Sou a assistente virtual da Milena. Posso te ajudar com:",
   "fallback": "Não encontrei essa resposta, mas a Milena pode te ajudar! 😊💬",
-  "whatsappLink": "https://wa.me/5511984143772?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20sess%C3%A3o.",
+  "whatsappLink": "https://wa.me/5511984143772?text=Oi%20Milena!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento%20%F0%9F%92%9B",
   "options": [
     { "label": "Valores", "response": "Os valores são conversados diretamente com a Milena pra entender o melhor formato pra você. Vou te direcionar! 💬", "showWhatsApp": true },
     { "label": "Como funciona", "response": "Você me chama no WhatsApp, combinamos um horário e fazemos sua primeira sessão. Simples assim! 😊", "showWhatsApp": false },

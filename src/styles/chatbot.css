@@ -2,11 +2,11 @@
 .mg-avatar { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; background: #F5EDE8; color: #6B1F2A; font-family: var(--font-heading); font-weight: 700; letter-spacing: -0.02em; flex-shrink: 0; }
 
 /* Toggle */
-.chatbot-toggle { position: fixed; bottom: 100px; right: 24px; z-index: 998; width: 52px; height: 52px; border-radius: var(--radius-full); background: var(--color-white); border: 1px solid rgba(107,31,42,0.1); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; box-shadow: 0 4px 16px rgba(107,31,42,0.08); transition: all var(--transition-base); }
+.chatbot-toggle { position: fixed; bottom: 90px; right: 20px; z-index: 998; width: 52px; height: 52px; border-radius: var(--radius-full); background: var(--color-white); border: 1px solid rgba(107,31,42,0.1); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; box-shadow: 0 4px 16px rgba(107,31,42,0.08); transition: all var(--transition-base); }
 .chatbot-toggle:hover { transform: scale(1.08); box-shadow: 0 6px 20px rgba(107,31,42,0.12); }
 
 /* Window */
-.chatbot-window { position: fixed; bottom: 164px; right: 24px; z-index: 999; width: 340px; max-height: 480px; border-radius: var(--radius-lg); background: var(--color-white); box-shadow: 0 12px 48px rgba(107,31,42,0.12); display: flex; flex-direction: column; overflow: hidden; animation: fadeInUp 0.3s ease; border: 1px solid rgba(107,31,42,0.06); }
+.chatbot-window { position: fixed; bottom: 152px; right: 20px; z-index: 999; width: 340px; max-height: 480px; border-radius: var(--radius-lg); background: var(--color-white); box-shadow: 0 12px 48px rgba(107,31,42,0.12); display: flex; flex-direction: column; overflow: hidden; animation: fadeInUp 0.3s ease; border: 1px solid rgba(107,31,42,0.06); }
 
 /* Header */
 .chatbot-header { padding: var(--space-md) var(--space-lg); background: var(--color-text); color: var(--color-cream); display: flex; align-items: center; justify-content: space-between; }
@@ -38,4 +38,4 @@
 .chatbot-input input { flex: 1; padding: var(--space-sm) var(--space-md); border: none; background: none; font-size: var(--fs-sm); font-family: var(--font-body); outline: none; }
 .chatbot-input button { padding: var(--space-sm) var(--space-md); background: none; color: var(--color-text); font-size: var(--fs-base); }
 
-@media (max-width: 767px) { .chatbot-window { right: 12px; left: 12px; width: auto; bottom: 164px; } .chatbot-toggle { bottom: 100px; right: 24px; } }
+@media (max-width: 767px) { .chatbot-window { right: 12px; left: 12px; width: auto; bottom: 152px; } .chatbot-toggle { bottom: 90px; right: 20px; } }

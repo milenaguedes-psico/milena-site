@@ -1,9 +1,9 @@
 /* ===== WHATSAPP FLUTUANTE ===== */
 .whatsapp-float {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+  z-index: 997;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,8 +25,8 @@
 
 @media (min-width: 768px) {
   .whatsapp-float {
-    bottom: 32px;
-    right: 32px;
+    bottom: 24px;
+    right: 24px;
     width: 64px;
     height: 64px;
   }

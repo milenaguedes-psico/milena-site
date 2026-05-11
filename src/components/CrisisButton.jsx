@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import '../styles/crisis.css'
 
-const WHATSAPP_LINK = 'https://wa.me/5511984143772?text=Preciso%20conversar%20agora.'
+const WHATSAPP_LINK = 'https://wa.me/5511984143772?text=Oi%20Milena!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento%20%F0%9F%92%9B'
 
 const BREATH_PHASES = ['Inspira...', 'Segura...', 'Expira...']
 
