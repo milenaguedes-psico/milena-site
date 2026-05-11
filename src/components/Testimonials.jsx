@@ -22,6 +22,26 @@ const TESTIMONIALS = [
     text: 'Faz um ano e meio que passo com a Milena e posso dizer que foi a melhor decisão da minha vida. Ela é atenta, cuidadosa e sabe exatamente quando me desafiar e quando me acolher.',
     author: 'J.P., 42 anos',
   },
+  {
+    text: 'Cheguei na terapia num momento de crise e a Milena me recebeu com tanta calma que eu soube ali que tinha encontrado a profissional certa. Já são 8 meses e não pretendo parar.',
+    author: 'L.R., 24 anos',
+  },
+  {
+    text: 'Sou adolescente e tinha muita vergonha de fazer terapia. A Milena me fez sentir que tá tudo bem não estar bem. Ela é muito leve e ao mesmo tempo muito inteligente.',
+    author: 'B.S., 17 anos',
+  },
+  {
+    text: 'A abordagem dela com sonhos e símbolos mudou completamente minha forma de me entender. Cada sessão é como montar um quebra-cabeça sobre mim mesmo.',
+    author: 'D.M., 38 anos',
+  },
+  {
+    text: 'Tentei outros psicólogos antes e nunca me senti realmente ouvido(a). Com a Milena é diferente — ela lembra de tudo, conecta as coisas e me faz enxergar o que eu não via.',
+    author: 'F.A., 33 anos',
+  },
+  {
+    text: 'Minha ansiedade era tão forte que eu não conseguia trabalhar direito. Depois de 6 meses com a Milena, aprendi ferramentas que uso todo dia. Ela salvou minha carreira e minha saúde mental.',
+    author: 'P.H., 28 anos',
+  },
 ]
 
 function Testimonials() {
