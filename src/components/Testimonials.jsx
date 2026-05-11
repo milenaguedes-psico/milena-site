@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef, useCallback } from 'react'
 import '../styles/testimonials.css'
 
 const TESTIMONIALS = [
@@ -49,13 +49,22 @@ function Testimonials() {
   const [paused, setPaused] = useState(false)
   const intervalRef = useRef(null)
 
+  const goNext = useCallback(() => {
+    setCurrent((prev) => (prev + 1) % TESTIMONIALS.length)
+  }, [])
+
+  const goPrev = useCallback(() => {
+    setCurrent((prev) => (prev - 1 + TESTIMONIALS.length) % TESTIMONIALS.length)
+  }, [])
+
   useEffect(() => {
-    if (paused) return
-    intervalRef.current = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % TESTIMONIALS.length)
-    }, 5000)
+    if (paused) {
+      clearInterval(intervalRef.current)
+      return
+    }
+    intervalRef.current = setInterval(goNext, 5000)
     return () => clearInterval(intervalRef.current)
-  }, [paused])
+  }, [paused, goNext])
 
   return (
     <section className="testimonials section">
@@ -66,7 +75,14 @@ function Testimonials() {
           className="testimonials__carousel reveal"
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
+          onTouchStart={() => setPaused(true)}
+          onTouchEnd={() => setPaused(false)}
         >
+          {/* Arrows - desktop */}
+          <button className="testimonials__arrow testimonials__arrow--prev" onClick={goPrev} aria-label="Anterior">
+            ‹
+          </button>
+
           <div className="testimonials__track">
             {TESTIMONIALS.map((item, index) => (
               <div
@@ -84,6 +100,17 @@ function Testimonials() {
             ))}
           </div>
 
+          <button className="testimonials__arrow testimonials__arrow--next" onClick={goNext} aria-label="Próximo">
+            ›
+          </button>
+
+          {/* Mobile arrows */}
+          <div className="testimonials__mobile-nav">
+            <button className="testimonials__mobile-arrow" onClick={goPrev} aria-label="Anterior">‹</button>
+            <button className="testimonials__mobile-arrow" onClick={goNext} aria-label="Próximo">›</button>
+          </div>
+
+          {/* Dots */}
           <div className="testimonials__dots">
             {TESTIMONIALS.map((_, index) => (
               <button

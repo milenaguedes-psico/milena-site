@@ -38,4 +38,7 @@
 .chatbot-input input { flex: 1; padding: var(--space-sm) var(--space-md); border: none; background: none; font-size: var(--fs-sm); font-family: var(--font-body); outline: none; }
 .chatbot-input button { padding: var(--space-sm) var(--space-md); background: none; color: var(--color-text); font-size: var(--fs-base); }
 
-@media (max-width: 767px) { .chatbot-window { right: 12px; left: 12px; width: auto; bottom: 152px; } .chatbot-toggle { bottom: 90px; right: 20px; } }
+@media (max-width: 768px) {
+  .chatbot-toggle { bottom: 84px; right: 16px; width: 48px; height: 48px; }
+  .chatbot-window { right: 12px; left: 12px; width: auto; bottom: 144px; max-height: 400px; }
+}

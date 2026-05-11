@@ -12,4 +12,4 @@
 .crisis-modal__contacts a { color: var(--color-accent); text-decoration: underline; }
 .crisis-modal__cta { margin-bottom: var(--space-lg); }
 .crisis-modal__emergency { font-size: var(--fs-xs); opacity: 0.6; }
-@media (max-width: 767px) { .crisis-btn { top: 20px; right: 20px; } }
+@media (max-width: 767px) { .crisis-btn { top: 70px; right: auto; left: 50%; transform: translateX(-50%); font-size: 11px; padding: 5px 10px; } }

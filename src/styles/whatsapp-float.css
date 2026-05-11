@@ -23,7 +23,7 @@
   animation: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .whatsapp-float {
     bottom: 24px;
     right: 24px;
@@ -34,5 +34,14 @@
   .whatsapp-float svg {
     width: 32px;
     height: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 20px;
+    right: 16px;
+    width: 56px;
+    height: 56px;
   }
 }
