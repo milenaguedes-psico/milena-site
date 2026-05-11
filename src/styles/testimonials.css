@@ -1,0 +1,115 @@
+/* ===== TESTIMONIALS ===== */
+.testimonials {
+  background-color: var(--color-bg);
+}
+
+.testimonials__title {
+  font-size: var(--fs-3xl);
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.testimonials__carousel {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonials__track {
+  position: relative;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials__slide {
+  position: absolute;
+  width: 100%;
+  padding: var(--space-2xl);
+  text-align: center;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.testimonials__slide--active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.testimonials__text {
+  font-family: var(--font-heading);
+  font-size: var(--fs-lg);
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: var(--space-lg);
+}
+
+.testimonials__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.testimonials__stars {
+  font-size: var(--fs-sm);
+}
+
+.testimonials__author {
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+/* Dots */
+.testimonials__dots {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-xl);
+}
+
+.testimonials__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background: rgba(107, 31, 42, 0.2);
+  transition: all var(--transition-base);
+}
+
+.testimonials__dot--active {
+  background: var(--color-text);
+  width: 24px;
+  border-radius: 4px;
+}
+
+.testimonials__dot:hover {
+  background: rgba(107, 31, 42, 0.5);
+}
+
+/* Disclaimer */
+.testimonials__disclaimer {
+  text-align: center;
+  font-size: var(--fs-xs);
+  opacity: 0.5;
+  margin-top: var(--space-xl);
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .testimonials__slide {
+    padding: var(--space-3xl);
+  }
+
+  .testimonials__text {
+    font-size: var(--fs-xl);
+  }
+
+  .testimonials__track {
+    min-height: 250px;
+  }
+}

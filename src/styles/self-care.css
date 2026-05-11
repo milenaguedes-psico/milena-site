@@ -1,0 +1,6 @@
+.selfcare-modal { position: fixed; inset: 0; z-index: 1999; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center; padding: var(--space-lg); animation: fadeInUp 0.6s ease; }
+.selfcare-modal__content { max-width: 360px; width: 100%; padding: var(--space-3xl) var(--space-2xl); text-align: center; background: var(--color-cream); border-radius: var(--radius-lg); }
+.selfcare-modal__title { font-family: var(--font-heading); font-size: var(--fs-2xl); margin-bottom: var(--space-xl); }
+.selfcare-modal__circle { width: 100px; height: 100px; border-radius: var(--radius-full); background: radial-gradient(circle, rgba(107,31,42,0.08) 0%, rgba(201,169,154,0.25) 100%); margin: 0 auto var(--space-md); animation: breathe 8s ease-in-out infinite; }
+.selfcare-modal__phase { font-size: var(--fs-base); opacity: 0.7; margin-bottom: var(--space-2xl); display: block; }
+.selfcare-modal__btn { background: var(--color-text); color: var(--color-cream); padding: var(--space-md) var(--space-2xl); border-radius: var(--radius-xl); font-size: var(--fs-base); font-weight: 500; }

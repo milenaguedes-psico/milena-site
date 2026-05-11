@@ -1,0 +1,4 @@
+.loading-screen { position: fixed; inset: 0; z-index: 9999; background: var(--color-bg); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-lg); transition: opacity 0.6s ease, visibility 0.6s ease; }
+.loading-screen--hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+.loading-screen__butterfly { font-size: 4rem; animation: float 2s ease-in-out infinite; }
+.loading-screen__text { font-family: var(--font-heading); font-size: var(--fs-lg); color: var(--color-text); opacity: 0.7; }

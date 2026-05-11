@@ -1,0 +1,120 @@
+/* ===== DAY IN THERAPY ===== */
+.day-therapy {
+  background-color: var(--color-bg);
+}
+
+.day-therapy__title {
+  font-size: var(--fs-3xl);
+  text-align: center;
+  margin-bottom: var(--space-xs);
+}
+
+.day-therapy__subtitle {
+  text-align: center;
+  font-size: var(--fs-base);
+  opacity: 0.7;
+  margin-bottom: var(--space-3xl);
+}
+
+/* Steps layout */
+.day-therapy__steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.day-therapy__step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-xl);
+  max-width: 220px;
+}
+
+.day-therapy__step-number {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-full);
+  background: rgba(107, 31, 42, 0.1);
+  color: var(--color-text);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day-therapy__step-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-md);
+}
+
+.day-therapy__step-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.day-therapy__step-desc {
+  font-size: var(--fs-sm);
+  font-style: italic;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+/* Connector dots */
+.day-therapy__connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: var(--space-xs) 0;
+}
+
+.day-therapy__connector-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: var(--radius-full);
+  background: rgba(107, 31, 42, 0.25);
+}
+
+/* CTA */
+.day-therapy__cta {
+  text-align: center;
+  margin-top: var(--space-3xl);
+}
+
+/* Desktop: horizontal */
+@media (min-width: 768px) {
+  .day-therapy__steps {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .day-therapy__connector {
+    flex-direction: row;
+    align-self: center;
+    padding: 0 var(--space-xs);
+    margin-top: var(--space-3xl);
+  }
+
+  .day-therapy__connector-dot {
+    width: 5px;
+    height: 5px;
+  }
+
+  .day-therapy__step {
+    max-width: 200px;
+  }
+}

@@ -1,0 +1,12 @@
+.contact { background-color: var(--color-cream); }
+.contact__title { font-size: var(--fs-3xl); text-align: center; margin-bottom: var(--space-xs); }
+.contact__subtitle { text-align: center; font-size: var(--fs-base); opacity: 0.7; margin-bottom: var(--space-2xl); }
+.contact__card { max-width: 500px; margin: 0 auto; padding: var(--space-2xl); display: flex; flex-direction: column; gap: var(--space-lg); }
+.contact__item { display: flex; align-items: center; gap: var(--space-md); padding: var(--space-sm) var(--space-md); border-radius: var(--radius-sm); transition: background var(--transition-fast); }
+a.contact__item:hover { background: rgba(107,31,42,0.04); }
+.contact__svg { flex-shrink: 0; }
+.contact__info { display: flex; flex-direction: column; gap: 2px; }
+.contact__label { font-size: var(--fs-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.5; }
+.contact__value { font-size: var(--fs-base); font-weight: 500; color: var(--color-body); }
+a.contact__item .contact__value { color: var(--color-text); }
+a.contact__item:hover .contact__value { text-decoration: underline; }

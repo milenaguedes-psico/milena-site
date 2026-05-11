@@ -1,0 +1,49 @@
+/* ===== COUNTERS ===== */
+.counters {
+  background-color: var(--color-cream);
+  padding: var(--space-3xl) 0;
+}
+
+.counters__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl) var(--space-lg);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.counters__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.counters__number {
+  font-family: var(--font-heading);
+  font-size: var(--fs-4xl);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1;
+}
+
+.counters__label {
+  font-size: var(--fs-sm);
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .counters__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .counters__number {
+    font-size: var(--fs-5xl);
+  }
+
+  .counters__label {
+    font-size: var(--fs-base);
+  }
+}

@@ -1,0 +1,120 @@
+/* ===== SHADOW & LIGHT ===== */
+.shadow-light {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.shadow-light__bg {
+  position: absolute;
+  inset: 0;
+  display: flex;
+}
+
+.shadow-light__dark {
+  flex: 1;
+  background: linear-gradient(
+    135deg,
+    #3d1520 0%,
+    #6B1F2A 50%,
+    #8B3A4A 100%
+  );
+}
+
+.shadow-light__light {
+  flex: 1;
+  background: linear-gradient(
+    135deg,
+    #C9A99A 0%,
+    #F5EDE8 50%,
+    #ffffff 100%
+  );
+}
+
+/* Smooth gradient transition overlay */
+.shadow-light__bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 35%;
+  right: 35%;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    #6B1F2A 0%,
+    rgba(107, 31, 42, 0.6) 25%,
+    rgba(201, 169, 154, 0.6) 75%,
+    #F5EDE8 100%
+  );
+}
+
+.shadow-light__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: var(--space-4xl) var(--space-lg);
+}
+
+.shadow-light__text {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.shadow-light__line {
+  font-family: var(--font-heading);
+  font-size: var(--fs-xl);
+  line-height: 1.6;
+  margin-bottom: var(--space-md);
+  color: var(--color-white);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-light__line--1 {
+  opacity: 0.95;
+}
+
+.shadow-light__line--2 {
+  opacity: 0.9;
+  font-size: var(--fs-lg);
+}
+
+.shadow-light__line--3 {
+  opacity: 0.85;
+  font-style: italic;
+  margin-bottom: var(--space-xl);
+}
+
+.shadow-light__line--4 {
+  opacity: 1;
+  font-weight: 600;
+}
+
+.shadow-light__line--5 {
+  opacity: 0.95;
+  font-weight: 500;
+}
+
+.shadow-light__butterfly {
+  display: block;
+  margin-top: var(--space-xl);
+  font-size: 2rem;
+  opacity: 0.3;
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .shadow-light {
+    min-height: 70vh;
+  }
+
+  .shadow-light__line {
+    font-size: var(--fs-2xl);
+  }
+
+  .shadow-light__line--2 {
+    font-size: var(--fs-xl);
+  }
+}

@@ -1,0 +1,99 @@
+/* ===== MYTHS ACCORDION ===== */
+.myths {
+  background-color: var(--color-cream);
+}
+
+.myths__title {
+  font-size: var(--fs-3xl);
+  text-align: center;
+  margin-bottom: var(--space-xs);
+}
+
+.myths__subtitle {
+  text-align: center;
+  font-size: var(--fs-base);
+  opacity: 0.7;
+  margin-bottom: var(--space-2xl);
+}
+
+.myths__list {
+  max-width: 650px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.myths__item {
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.myths__trigger {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  width: 100%;
+  padding: var(--space-lg) var(--space-xl);
+  background: none;
+  text-align: left;
+  font-size: var(--fs-base);
+  color: var(--color-text);
+  transition: background var(--transition-fast);
+}
+
+.myths__trigger:hover {
+  background: rgba(107, 31, 42, 0.03);
+}
+
+.myths__myth-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.myths__myth-text {
+  flex: 1;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.myths__chevron {
+  font-size: var(--fs-xl);
+  font-weight: 300;
+  opacity: 0.5;
+  flex-shrink: 0;
+  transition: transform var(--transition-base);
+}
+
+/* Answer */
+.myths__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.myths__item--open .myths__answer {
+  max-height: 120px;
+}
+
+.myths__answer-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: 0 var(--space-xl) var(--space-lg);
+}
+
+.myths__truth-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.myths__truth-text {
+  font-size: var(--fs-base);
+  font-weight: 500;
+  color: var(--color-accent);
+}
+
+.myths__item--open {
+  box-shadow: 0 8px 32px rgba(107, 31, 42, 0.12);
+}

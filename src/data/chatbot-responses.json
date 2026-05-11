@@ -1,0 +1,22 @@
+{
+  "greeting": "Oi! 👋 Sou a assistente virtual da Milena. Posso te ajudar com:",
+  "fallback": "Não encontrei essa resposta, mas a Milena pode te ajudar! 😊💬",
+  "whatsappLink": "https://wa.me/5511984143772?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20sess%C3%A3o.",
+  "options": [
+    { "label": "Valores", "response": "Os valores são conversados diretamente com a Milena pra entender o melhor formato pra você. Vou te direcionar! 💬", "showWhatsApp": true },
+    { "label": "Como funciona", "response": "Você me chama no WhatsApp, combinamos um horário e fazemos sua primeira sessão. Simples assim! 😊", "showWhatsApp": false },
+    { "label": "Atende online?", "response": "Sim! Meu atendimento é 100% online, por videochamada. Você pode estar onde se sentir mais confortável. 💻🌿", "showWhatsApp": false },
+    { "label": "Horários", "response": "Atendo de segunda a sexta, manhã, tarde e noite! Vamos encontrar o melhor horário pra você? 💬", "showWhatsApp": true },
+    { "label": "Primeira sessão", "response": "Na primeira sessão a gente se conhece, você conta o que te trouxe e entendemos junto como posso te ajudar. Sem compromisso! 🤝", "showWhatsApp": false },
+    { "label": "Abordagem", "response": "Trabalho com Psicologia Analítica (Jung). Junto, exploramos o inconsciente — sonhos, símbolos, padrões — pra você se conhecer de verdade. 🧠", "showWhatsApp": false },
+    { "label": "Duração", "response": "Cada sessão tem duração de 50 minutos. ⏱️", "showWhatsApp": false },
+    { "label": "Aceita plano?", "response": "Não trabalho diretamente com planos, mas emito Nota Fiscal pra você solicitar reembolso ao seu convênio! 🧾", "showWhatsApp": false },
+    { "label": "Posso parcelar?", "response": "Sim! Aceito cartão de crédito com possibilidade de parcelamento. 💳", "showWhatsApp": false },
+    { "label": "Emite NF?", "response": "Sim! Emito NF pra todas as sessões. Use pra reembolso. 🧾", "showWhatsApp": false },
+    { "label": "Atende adolescente?", "response": "Sim! Adultos e adolescentes. Menores: conversamos com responsáveis. 💛", "showWhatsApp": false },
+    { "label": "Sigilo?", "response": "100% protegido pelo sigilo profissional. Espaço seguro. 🔒", "showWhatsApp": false },
+    { "label": "Frequência", "response": "Combinamos junto! Semanal, quinzenal... respeitando seu momento. 📅", "showWhatsApp": false },
+    { "label": "Presencial?", "response": "Atualmente 100% online! De qualquer lugar. 🏡", "showWhatsApp": false },
+    { "label": "Como agendar?", "response": "Me chama no WhatsApp! 📱", "showWhatsApp": true }
+  ]
+}
